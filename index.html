@@ -5,296 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile Dimensions</title>
     <style>
-        /*  Basic styling added for clarity and structure.  */
         body {
-            font-family: sans-serif;
-            margin: 0; /* Remove default body margin */
-        }
-        .section {
-            padding: 20px;
-            border-bottom: 1px solid #ddd; /* Light grey separator */
-        }
-        .services-list {
-            list-style: none; /* Remove bullet points */
-            padding: 0;
-        }
-        .services-list li {
-            margin-bottom: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff; /* Example color - adjust as needed */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="section" id="top">
-        <h1>Keeping your business ahead</h1>
-    </div>
-    <div class="section" id="about">
-        <h2>About</h2>
-        <h3>Consulting with Purpose</h3>
-        <p>At Agile Dimensions, we understand that business agility is a journey,
-        not a destination. Our approach is focused on delivering measurable
-        results through a combination of classroom training, on-the-job
-        coaching, and guidance from experienced mentors. We provide our clients
-        with the tools and techniques they need to adapt to changing market
-        conditions, reduce time-to-market, and deliver better value to their
-        customers. Whether you are just starting out on your agile journey or
-        looking to take your team to the next level, we can help.</p>
-    </div>
-    <div class="section" id="services">
-        <h1>Our Services</h1>
-        <ul class="services-list">
-            <li>
-                <img src="images/coaching.jpg" alt="Agile Transformation Coaching">
-                <h2>Agile Transformation Coaching</h2>
-                <a href="#contact" class="button">Contact us</a>
-                <a href="#contact" class="button">Book Now</a>
-            </li>
-            <li>
-                <img src="images/training.jpg" alt="Agile Training">
-                <h2>Agile Training</h2>
-                <a href="#contact" class="button">Contact us</a>
-                <a href="#contact" class="button">Book Now</a>
-            </li>
-            <li>
-                <img src="images/delivery.jpg" alt="Delivery Management">
-                <h2>Delivery Management</h2>
-                <a href="#contact" class="button">Contact us</a>
-                <a href="#contact" class="button">Book Now</a>
-            </li>
-        </ul>
-    </div>
-    <div class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>This is a placeholder for the contact section.  In a full implementation, this would contain a contact form or other contact details.</p>
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Dimensions - Transform Your Team</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #1a237e;
-            --secondary: #35a8eb;
-            --dark: #1d2b40;
-            --light: #f9f9fa;
-            --accent: #4dc3dd;
-        }
-
-        * {
+            font-family: 'helvetica-w01-roman', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        body {
-            line-height: 1.6;
-            color: var(--dark);
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, #f8f9fa 0%, var(--primary) 100%);
+        header {
+            background-color: #237374;
             color: white;
+            padding: 1rem 0;
             text-align: center;
         }
-
-        .nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 1rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        .nav ul {
-            display: flex;
-            justify-content: center;
+        nav ul {
             list-style: none;
-            gap: 2rem;
+            padding: 0;
         }
-
-        .nav a {
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
             text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: all 0.3s ease;
         }
-
-        .nav a:hover {
-            color: var(--secondary);
+        .container {
+            padding: 20px;
         }
-
         .section {
-            padding: 4rem 2rem;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
         }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-
-        .hero-content p {
-            font-size: 1.5rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
         }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .testimonials {
-            background: var(--light);
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        @media (max-width: 768px) {
-            .nav ul {
-                display: none;
-            }
-            
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
+        .contact-form button {
+            background-color: #237374;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Transform Your Team into Agile Champions</h1>
-            <p>Bridging the gap between theory and practical, delivering measurable results for your agile transformation journey.</p>
+    <header>
+                <img src="/Users/andyspamer/Dev-Space/Agile Dimensions/website/Agile Dimensions/static.wixstatic.com/media/7729b0_da6e2e8b56eb4c75b0dfcab1d97f4340~mv2.png/v1/fill/w_315,h_191,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7729b0_da6e2e8b56eb4c75b0dfcab1d97f4340~mv2.png" alt="Agile Dimensions Logo" style="width: 315px; height: 191px;">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Agile Dimensions were established in 2012 with the aim to bring an agile mindset to the Perth market, and since then we have worked with global organisations in the mining, oil & gas, and finance sectors, as well as government organisations.</p>
+                        <h3>Our Principal Consultant - Andy Spamer</h3>
+            <img src="/Users/andyspamer/Dev-Space/Agile Dimensions/website/Agile Dimensions/static.wixstatic.com/media/7729b0_c0eb695599564884bd15fe63eaf0feaf~mv2.jpg/v1/fill/w_180,h_225,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/AndySpamer_JPG.jpg" alt="Andy Spamer" style="width: 180px; height: 225px; border-radius: 50%;">
+            <p>Andy has been a project manager since 1998, and has always been a firm believer in the PRINCE2 project management methodology. However he was always a pragmatist and he quickly found that for the technology projects he was working on, PRINCE2 was too bureaucratic, and this led him to create his own cut down version - Pragmatic PRINCE. Leading a large complex software project in 2004, Andy discovered Scrum. He worked with his team to try this approach, and it become clear this was the missing piece of his jigsaw. He honed his agile skills and knowledge for the next 6 years before emigrating to Australia in 2010. Andy has continued to develop his skills, growing from a Scrum Master to an Agile Coach, and Business Transformation Consultant.</p>
         </div>
-    </section>
 
-    <section class="section" id="about">
-        <h2>About Us</h2>
-        <p>At Agile Dimensions, we specialize in guiding businesses through successful agile transformations. Our experienced coaches bring a proven track record of helping teams achieve their full potential.</p>
-    </section>
-
-    <section class="section" id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-coach"></i>
-                <h3>Agile Transformation Coaching</h3>
-                <p>Expert guidance for organizational change and cultural transformation.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Comprehensive Training</h3>
-                <p>Skill-building programs tailored to your team's needs.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-project-diagram"></i>
-                <h3>Delivery Management</h3>
-                <p>Streamlined processes for efficient project delivery.</p>
-            </div>
+        <div id="services" class="section">
+            <h2>Our Services</h2>
+            <p>We provide practical and face to face transformation for your teams. We lead your transformation and training needs, and don't just provide vapourware strategy documents.</p>
+            <ul>
+                <li>Agile Transformation Coaching</li>
+                <li>Agile Training</li>
+                <li>Delivery Management</li>
+            </ul>
         </div>
-    </section>
 
-    <section class="section testimonials" id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-card">
-            <p>"Working with Agile Dimensions transformed our team's productivity and collaboration."</p>
-            <h4>- John Smith, Tech Corp</h4>
+        <div id="testimonials" class="section">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"I've worked with Andy for a number of years and he is a passionate and dedicated Agile Coach and trainer..."</p>
+                <footer>- Stuart Mitchell, Agile Coach</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Andy is a truly inspirational leader, with a real passion for Agile and Lean..."</p>
+                <footer>- Jen Wagner, Agile Delivery Manager</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Andy is a highly experienced and passionate agile coach..."</p>
+                <footer>- David Webb, Agile Coach</footer>
+            </blockquote>
         </div>
-        <div class="testimonial-card">
-            <p>"Their expertise in agile coaching made a significant impact on our business outcomes."</p>
-            <h4>- Sarah Johnson, Innovation Co.</h4>
+
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Reach out for a no obligation chat on what we do and how we might help you.</p>
+            <p>Email: <a href="mailto:info@agiledimensions.com.au">info@agiledimensions.com.au</a></p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
-    </section>
+    </div>
 
-    <section class="section" id="contact">
-        <h2>Start Your Agile Journey Today</h2>
-        <form class="contact-form">
-            <div style="display:flex; gap:1rem;">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-            </div>
-            <textarea rows="5" placeholder="Message" required></textarea>
-            <button type="submit" class="button">Send Message</button>
-        </form>
-    </section>
+    <div class="footer">
+        <p>&copy; 2025 Agile Dimensions. All Rights Reserved.</p>
+    </div>
 
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
